@@ -1,0 +1,25 @@
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: linear-gradient(to right, rgb(29, 25, 25), rgb(75, 75, 71));
+    color: aliceblue;
+    text-align: center;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(233, 240, 247, 0.185);
+}
+
+.notActive {
+    display: none;
+}

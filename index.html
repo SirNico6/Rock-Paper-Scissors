@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/index.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors!</title>
 </head>
 <body>
-    
+    <h1>ROCK - PAPER - SCISSORS (Human vs Machine)</h1>
+    <div class="game">
+        <p>The first to score 5 points wins.</p>
+        <div class="items" id="items">
+            <button onclick="playerPlay('Rock')">
+                <img src="./img/rock.png" style="height: 200px; width: 200px;">
+            </button>
+            <button onclick="playerPlay('Paper')">
+                <img src="./img/paper.png" style="height: 200px; width: 200px;">
+            </button>
+            <button onclick="playerPlay('Scissors')">
+                <img src="./img/scissors.png" style="height: 200px; width: 200px;">
+            </button>
+        </div>
+        <div class="notActive" id="reset">
+            <h3>Click to play again!</h3>
+            <button onclick="restart()">
+                <img src="./img/gameover.png" style="height: 200px; width: 300px;">
+            </button>
+        </div>
+        <h2 id="output"></h2>
+        <div class="points">  
+            <h3>Player points:</h3>
+            <p id="playerPoints"></p>
+            <h3>Computer points:</h3>
+            <p id="ComputerPoints"></p>
+        </div>
+        <div>
+            <h2>WE HAVE A WINNER: </h2>
+            <p id="winner"></p>
+        </div>
+    </div>
 </body>
+<head>
+    <script src="index.js"></script>
+</head>
 </html>
